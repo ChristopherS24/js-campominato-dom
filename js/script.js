@@ -1,3 +1,5 @@
+let point = 0
+
 const gridButton = document.getElementById(`gridButton`);
 
 gridButton.addEventListener(`click`,function (event) {
@@ -27,12 +29,17 @@ gridButton.addEventListener(`click`,function (event) {
             console.log(newCell.innerHTML);
             
             const cellNumber = parseInt(this.innerText);
-            console.log (cellNumber);
+            //console.log (cellNumber);
+
+
 
             if (bombs.includes(cellNumber)){
                 this.classList.add('bomb');
+                alert('You Die... try again')
             }
             else {this.classList.add('notbomb');
+                point ++
+                console.log('Punteggio:', point)
             }
         });
         gridContainer.append(newCell);
