@@ -40,8 +40,18 @@ body {
     align-items: center ;
 }
 
-#gridContainer > .clean {
+#gridContainer > .lightcoral {
     background-color: lightcoral;
+    border: 1px solid white;
+}
+
+#gridContainer > .bomb {
+    background-color: crimson;
+    border: 1px solid black;
+}
+
+#gridContainer > .notbomb {
+    background-color: green;
     border: 1px solid white;
 }
 
@@ -53,3 +63,5 @@ body {
     justify-content: center;
     border: 1px solid white;
 }
+
+
